@@ -41,11 +41,9 @@ php-ioncubeloader/setup/ioncubeloader/ioncube_loader_lin_5.3_ts.so
 ```bash
 cd /usr/src
 git clone https://github.com/iperfex-team/php-ioncubeloader.git
-cd /usr/src/iperfex-agi/rpmbuild/SOURCES/
-tar -czvf iperfex-agi_3.0.0-1.tgz iperfex-agi
-yes | mv /usr/src/iperfex-agi/rpmbuild/SOURCES/iperfex-agi_3.0.0-1.tgz /root/rpmbuild/SOURCES/
-yes | cp -fra /usr/src/iperfex-agi/rpmbuild/SPECS/iperfex-agi_3.0.0-1.spec /root/rpmbuild/SPECS/
-rpmbuild -ba /root/rpmbuild/SPECS/php-ioncubeloader.spec
+yes | cp -fra /usr/src/php-ioncubeloader/rpmbuild/SOURCES/php-ioncubeloader.tgz /root/rpmbuild/SOURCES/
+yes | cp -fra /usr/src/php-ioncubeloader/rpmbuild/SPECS/php-ioncubeloader_3.0.0-0.spec /root/rpmbuild/SPECS/
+rpmbuild -ba /root/rpmbuild/SPECS/php-ioncubeloader_3.0.0-0.spec
 ```
 
 ## Install
@@ -59,5 +57,5 @@ rpm -e --nodeps php-ioncubeloader
 ```
 Or
 ```bash
-rpm -e --noscripts php-ioncubeloader-3-0.0.0
+rpm -e --noscripts php-ioncubeloader_3.0.0-0
 ```
