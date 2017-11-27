@@ -57,5 +57,5 @@ rpm -e --nodeps php-ioncubeloader
 ```
 Or
 ```bash
-rpm -e --noscripts php-ioncubeloader_3.0.0-0
+rpm -e --noscripts php-ioncubeloader-3-0.0.0
 ```
