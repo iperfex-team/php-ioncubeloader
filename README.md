@@ -50,6 +50,10 @@ rpmbuild -ba /root/rpmbuild/SPECS/php-ioncubeloader_3.0.0-0.spec
 ```bash
 rpm -i /root/rpmbuild/RPMS/x86_64/php-ioncubeloader-3-0.0.0.x86_64.rpm
 ```
+## Install internet
+```bash
+rmp -i https://github.com/iperfex-team/php-ioncubeloader/raw/master/rpmbuild/RPMS/x86_64/php-ioncubeloader-3-0.0.0.x86_64.rpm
+```
 
 ## Uninstall
 ```bash
